@@ -8,28 +8,30 @@
     <header class="page-header">
       <nav class="nav">
         <div class="logo">
-          <img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
+          <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </div>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#">информация</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">фото и видео</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">карта штата</a>
-          </li>
-          <li class="nav-item">
-            <a href="hotels.html">гостиницы</a>
-          </li>
-        </ul>
+        <div class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#">информация</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">фото и видео</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">карта штата</a>
+            </li>
+            <li class="nav-item">
+              <a href="hotels.html">гостиницы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="page-content">
       <section class="promo">
-        <img src="img/welcome.png" width="459" height="353" alt="Надпись с приветствием">
-        <h1>Город "Седона"</h1>
+        <img src="img/intro-welcome.svg" width="459" height="353" alt="Надпись с приветствием">
+        <h1 class="visually-hidden">Город "Седона"</h1>
         <b>седона - небольшой городок в аризоне,
           заслуживающий большего!</b>
         <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
@@ -38,47 +40,52 @@
         <ol class="advantages-list">
           <li class="advantages-item">
             <h3>настоящий городок</h3>
+            <p>- №1 -</p>
             <p>cедона — не аттракцион для туристов,
               там течёт своя жизнь</p>
-            <img src="img/buildings.png" width="800" height="256" alt="Фотография группы зданий">
-            <ul class="advantages-desc">
-              <li class="desc-item">
+            <img src="img/buildings.jpg" width="800" height="256" alt="Фотография группы зданий">
+            <ul class="advantages-description">
+              <li class="description-item">
                 <img src="img/building.svg" width="75" height="72" alt="Иконка в виде здания">
                 <h3>жилье</h3>
                 <p>рекомендуем пожить в настоящем мотеле,
                   всё как в кино!</p>
               </li>
-              <li class="desс-item">
+              <li class="description-item">
                 <img src="img/burger.svg" width="75" height="72" alt="Иконка в виде бургера">
                 <h3>еда</h3>
                 <p>всегда заказывайте фирменный бургер, вы не
                   разочаруетесь!</p>
               </li>
-              <li class="desc-item">
+              <li class="description-item">
                 <img src="img/gift-box.svg" width="75" height="72" alt="Иконка в виде коробки с подарком">
                 <h3>сувениры</h3>
                  <p>не только китайского, но и местного
                    производства!</p>
               </li>
             </ul>
-          <li class="desc-item">
-          <img src="img/buildings.png" width="800" height="256" alt="Фотография горного утеса">
-          <h3>там есть мост дьявола</h3>
-          <p>да, по нему можно пройти! Если конечно вы
+          <li class="advantages-item row-reverse">
+            <h3>там есть мост дьявола</h3>
+            <p>- №2 -</p>
+            <p>да, по нему можно пройти! Если конечно вы
             осмелитесь</p>
+            <img src="img/mountains.jpg" width="800" height="256" alt="Фотография горного утеса">
           </li>
           <li class="advantages-item">
             <h3>небольшая площадь</h3>
+            <p>- №3 -</p>
             <p>все достопримечательности
               находятся очень близко</p>
           </li>
           <li class="advantages-item">
             <h3>красивая дорога</h3>
+            <p>- №4 -</p>
             <p>ехать в седону из лас-вегаса совсем 
               не скучно!</p>
           </li>
           <li class="advantages-item">
             <h3>мало туристов</h3>
+            <p>- №5 -</p>
             <p>большинство едет в гранд каньон 
               и толпится там</p>
           </li>
@@ -93,7 +100,9 @@
         </div>
         <button class="button-find" type="button">поиск гостиницы в седоне</button>
       </section>
-      <img src="img/map.png" width="1202" height="597" alt="Карта местности">
+      <section class="map">
+        <img src="img/map.png" width="1718" height="748" alt="Карта местности">
+      </section>
     </main>
     <footer class="page-footer">
       <p class="contacts">
@@ -101,19 +110,27 @@
         <a href="tel:+74956660266">тел: +7(495) 666-02-66</a>
       </p>
       <div class="socials">
-        <a class="button" href="#">
-          <img src="img/twitter.svg" width="46" height="48" alt="изображение логотипа Твиттер">
-        </a>
-        <a class="button" href="#">
-          <img src="img/facebook.svg" width="140" height="72" alt="изображение логотипа Фейсбук">
-        </a>
-        <a class="button" href="#">
-          <img src="img/youtube.svg" width="140" height="72" alt="изображение логотипа Ютюб">
-        </a>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a href="#" target="_blank">
+              <img src="img/twitter.svg" width="46" height="48" alt="изображение логотипа Твиттер">
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="#" target="_blank">
+              <img src="img/facebook.svg" width="140" height="72" alt="изображение логотипа Фейсбук">
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="#" target="_blank">
+              <img src="img/youtube.svg" width="140" height="72" alt="изображение логотипа Ютюб">
+            </a>
+          </li>
+        </ul>
       </div>
       <p class="copyright">
         <span>website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="blank">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/logo-html.svg" width="115" height="41" alt="логотип html академии">
         </a>
       </p>
