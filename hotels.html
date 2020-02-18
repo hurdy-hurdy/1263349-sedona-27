@@ -27,6 +27,7 @@
       </nav>
     </header>
     <main class="page-content">
+      <h1 class="visually-hidden">Форма поиска жилья</h1>
       <form class="options" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="infrastructure">
           <legend class="infrastructure-header">инфрастуктура:</legend>
@@ -70,15 +71,15 @@
         <input type="submit" value="показать">
         </p>
       </form>
-      <h1 class="visually-hidden">Поиск жилья</h1>
+
       <section class="results">
-        <h2>Варианты проживания</h2>
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="results-list">
           <li class="results-item">
             <img class="hotel-img" src="img/hotel-1.jpg" width="135" height="90" alt="Гостиница Amara Resort and Spa">
             <div class="info">
               <h3>Amara Resort & Spa</h3>
-              <p class="hotel-price"
+              <p class="hotel-price">
                 <span class="hotel-class">гостиница</span>
                 <span class="hotel-cost">от 4000 р.</span>
               </p>
@@ -96,7 +97,7 @@
             <img class="hotel-img" src="img/hotel-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             <div class="info">
               <h3>Desert Quail Inn</h3>
-              <p class="hotel-price"
+              <p class="hotel-price">
                 <span class="hotel-class">мотель</span>
                 <span class="hotel-cost">от 3000 р.</span>
               </p>
@@ -114,7 +115,7 @@
             <img class="hotel-img" src="img/hotel-3.jpg" width="135" height="90" alt="Аппартаменты Villas at Poco Diablo">
             <div class="info">
               <h3>Villas at Poco Diablo</h3>
-              <p class="hotel-price"
+              <p class="hotel-price">
                 <span class="hotel-class">аппартаменты</span>
                 <span class="hotel-cost">от 2000 р.</span>
               </p>
@@ -138,19 +139,19 @@
       </p>
       <div class="socials">
         <ul class="socials-list">
-          <li class="socials-item">
-            <a href="#" target="_blank">
-              <img src="img/twitter.svg" width="46" height="48" alt="изображение логотипа Твиттер">
+          <li>
+            <a class="social-button twitter-icon" href="#" target="_blank">
+              <!-- CSS <img src="img/twitter.svg" width="46" height="48" alt="изображение логотипа Твиттер"> -->
             </a>
           </li>
-          <li class="socials-item">
-            <a href="#" target="_blank">
-              <img src="img/facebook.svg" width="140" height="72" alt="изображение логотипа Фейсбук">
+          <li>
+            <a class="social-button fb-icon" href="#" target="_blank">
+              <!-- CSS <img src="img/facebook.svg" width="140" height="72" alt="изображение логотипа Фейсбук"> -->
             </a>
           </li>
-          <li class="socials-item">
-            <a href="#" target="_blank">
-              <img src="img/youtube.svg" width="140" height="72" alt="изображение логотипа Ютюб">
+          <li>
+            <a class="social-button youtube-icon" href="#" target="_blank">
+              <!-- CSS <img src="img/youtube.svg" width="140" height="72" alt="изображение логотипа Ютюб"> -->
             </a>
           </li>
         </ul>

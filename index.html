@@ -46,44 +46,44 @@
             <img src="img/buildings.jpg" width="800" height="256" alt="Фотография группы зданий">
             <ul class="advantages-description">
               <li class="description-item">
-                <img src="img/building.svg" width="75" height="72" alt="Иконка в виде здания">
+                <!-- CSS <img src="img/building.svg" width="75" height="72" alt="Иконка в виде здания"> -->
                 <h3>жилье</h3>
                 <p>рекомендуем пожить в настоящем мотеле,
                   всё как в кино!</p>
               </li>
               <li class="description-item">
-                <img src="img/burger.svg" width="75" height="72" alt="Иконка в виде бургера">
+                <!-- CSS <img src="img/burger.svg" width="75" height="72" alt="Иконка в виде бургера"> -->
                 <h3>еда</h3>
                 <p>всегда заказывайте фирменный бургер, вы не
                   разочаруетесь!</p>
               </li>
               <li class="description-item">
-                <img src="img/gift-box.svg" width="75" height="72" alt="Иконка в виде коробки с подарком">
+                <!-- CSS <img src="img/gift-box.svg" width="75" height="72" alt="Иконка в виде коробки с подарком"> -->
                 <h3>сувениры</h3>
                  <p>не только китайского, но и местного
                    производства!</p>
               </li>
             </ul>
-          <li class="advantages-item row-reverse">
+          <li class="advantages-item reverse">
             <h3>там есть мост дьявола</h3>
             <p>- №2 -</p>
             <p>да, по нему можно пройти! Если конечно вы
             осмелитесь</p>
             <img src="img/mountains.jpg" width="800" height="256" alt="Фотография горного утеса">
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item grey-bg">
             <h3>небольшая площадь</h3>
             <p>- №3 -</p>
             <p>все достопримечательности
               находятся очень близко</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item grey-bg">
             <h3>красивая дорога</h3>
             <p>- №4 -</p>
             <p>ехать в седону из лас-вегаса совсем 
               не скучно!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item grey-bg">
             <h3>мало туристов</h3>
             <p>- №5 -</p>
             <p>большинство едет в гранд каньон 
@@ -111,19 +111,19 @@
       </p>
       <div class="socials">
         <ul class="socials-list">
-          <li class="socials-item">
-            <a href="#" target="_blank">
-              <img src="img/twitter.svg" width="46" height="48" alt="изображение логотипа Твиттер">
+          <li>
+            <a class="social-button twitter-icon" href="#" target="_blank">
+              <!-- CSS <img src="img/twitter.svg" width="46" height="48" alt="изображение логотипа Твиттер"> -->
             </a>
           </li>
-          <li class="socials-item">
-            <a href="#" target="_blank">
-              <img src="img/facebook.svg" width="140" height="72" alt="изображение логотипа Фейсбук">
+          <li>
+            <a class="social-button fb-icon" href="#" target="_blank">
+              <!-- CSS <img src="img/fb-icon.svg" width="140" height="72" alt="изображение логотипа Фейсбук"> -->
             </a>
           </li>
-          <li class="socials-item">
-            <a href="#" target="_blank">
-              <img src="img/youtube.svg" width="140" height="72" alt="изображение логотипа Ютюб">
+          <li>
+            <a class="social-button youtube-icon" href="#" target="_blank">
+              <!-- CSS <img src="img/youtube.svg" width="140" height="72" alt="изображение логотипа Ютюб"> -->
             </a>
           </li>
         </ul>
@@ -135,36 +135,38 @@
         </a>
       </p>
     </footer>
-  <form class="booking" method="get" action="https://echo.htmlacademy.ru">
-    <p>
-      <label for="date-arrival">дата заезда:</label>
-      <input type="date" name="date" id="date-arrival" value="2017-04-17">
-      <button type="button">
-        <img src="calendar.png" width="21" height="23" alt="Иконка с изображением календаря">
-      </button>
-    </p>
-    <p>
-      <label for="date-departure">дата выезда:</label>
-      <input type="date" name="date" id="date-departure" value="2017-07-04">
-      <button type="button">
-        <img src="calendar.png" width="21" height="23" alt="Иконка с изображением календаря">
-      </button>
-    </p>
-    <p>
-      <label for="adults-field">взрослые:</label>
-      <button class="button-minus" type="button">-</button>
-      <input type="number" name="adults" id="adults-field" min="0" max="9" step="1" value="2">
-      <button class="button-plus" type="button">+</button>
-    </p>
-    <p>
-      <label for="children-field">дети:</label>
-      <button class="button-minus" type="button">-</button>
-      <input type="number" name="children" id="children-field" min="0" max="9" step="1" value="0">
-      <button class="button-plus" type="button">+</button>
-    </p>
-    <p>
-      <input class="button" type="submit" value="найти">
-    </p>
-  </form>
+  <div class="pop-up">
+    <form class="booking" method="get" action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="date-arrival">дата заезда:</label>
+        <input type="date" name="date" id="date-arrival" value="2017-04-17">
+        <button class="calendar" type="button">
+          <!-- CSS <img src="img/calendar.svg" width="21" height="23" alt="Иконка с изображением календаря"> -->
+        </button>
+      </p>
+      <p>
+        <label for="date-departure">дата выезда:</label>
+        <input type="date" name="date" id="date-departure" value="2017-07-04">
+        <button class="calendar" type="button">
+          <!-- CSS <img src="img/calendar.svg" width="21" height="23" alt="Иконка с изображением календаря"> -->
+        </button>
+      </p>
+      <p>
+        <label for="adults-field">взрослые:</label>
+        <button class="minus" type="button">-</button>
+        <input type="number" name="adults" id="adults-field" min="0" max="9" step="1" value="2">
+        <button class="plus" type="button">+</button>
+      </p>
+      <p>
+        <label for="children-field">дети:</label>
+        <button class="minus" type="button">-</button>
+        <input type="number" name="children" id="children-field" min="0" max="9" step="1" value="0">
+        <button class="plus" type="button">+</button>
+      </p>
+      <p>
+        <input class="button" type="submit" value="найти">
+      </p>
+    </form>
+  </div>
   </body>
 </html>
