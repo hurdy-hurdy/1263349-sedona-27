@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск жилья в городе "Седона"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page">
+  <body class="page-hotel">
     <header class="page-header">
-      <nav class="nav">
+      <nav class="main-nav">
         <a class="logo" href="index.html">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
@@ -60,33 +63,51 @@
           </p>
         </fieldset>
         <fieldset class="prices">
-          <legend class="prices-header">cтоимость в сутки (р):</legend>
-          <div class="prices">
-            <span class="prices-min">от 0</span>
-            <span class="prices-max">до 3000</span>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
-        <input type="range" min="0" max="3000">
         </fieldset>
-        <p class="button-show">
-        <input type="submit" value="показать">
-        </p>
       </form>
-
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
+        <section class="results-sort">
+          <h3>найдено: 3</h3>
+          <p>сортировка:</p>
+          <ul class="sort-list">
+            <li class="sort-item blue">по цене</li>
+            <li class="sort-item sub">по типу</li>
+            <li class="sort-item sub">по рейтингу</li>
+          </ul>
+          <div class="triangle">
+            <p class="triangle-up"></p>
+            <p class="triangle-down"></p>
+          </div>
+        </section>
         <ul class="results-list">
           <li class="results-item">
             <img class="hotel-img" src="img/hotel-1.jpg" width="135" height="90" alt="Гостиница Amara Resort and Spa">
             <div class="info">
               <h3>Amara Resort & Spa</h3>
-              <p class="hotel-price">
-                <span class="hotel-class">гостиница</span>
-                <span class="hotel-cost">от 4000 р.</span>
-              </p>
-              <p class="button-active">
+              <div>
+                <p class="hotel-class">гостиница</p>
+                <p class="hotel-cost">от 4000 р.</p>
+              </div>
+              <div class="button-active">
                 <a class="button-info" href="#">подробнее</a>
-                <button class="button-rent" type="button">забронировать</button>
-              </p>
+                <button class="button-rent" type="submit">забронировать</button>
+              </div>
             </div>
             <div class="rating">
               <p class="stars-4"></p>
@@ -97,14 +118,14 @@
             <img class="hotel-img" src="img/hotel-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             <div class="info">
               <h3>Desert Quail Inn</h3>
-              <p class="hotel-price">
-                <span class="hotel-class">мотель</span>
-                <span class="hotel-cost">от 3000 р.</span>
-              </p>
-              <p class="button-active">
+              <div class="hotel-price">
+                <p class="hotel-class">мотель</p>
+                <p class="hotel-cost">от 3000 р.</p>
+              </div>
+              <div class="button-active">
                 <a class="button-info" href="#">подробнее</a>
                 <button class="button-rent" type="button">забронировать</button>
-              </p>
+              </div>
             </div>
             <div class="rating">
               <p class="stars-3"></p>
@@ -115,14 +136,14 @@
             <img class="hotel-img" src="img/hotel-3.jpg" width="135" height="90" alt="Аппартаменты Villas at Poco Diablo">
             <div class="info">
               <h3>Villas at Poco Diablo</h3>
-              <p class="hotel-price">
-                <span class="hotel-class">аппартаменты</span>
-                <span class="hotel-cost">от 2000 р.</span>
-              </p>
-              <p class="button-active">
+              <div class="hotel-price">
+                <p class="hotel-class">аппартаменты</p>
+                <p class="hotel-cost">от 2000 р.</p>
+              </div>
+              <div class="button-active">
                 <a class="button-info" href="#">подробнее</a>
                 <button class="button-rent" type="button">забронировать</button>
-              </p>
+              </div>
             </div>
             <div class="rating">
               <p class="stars-2"></p>
@@ -134,30 +155,24 @@
     </main>
     <footer class="page-footer">
       <p class="contacts">
-        <span>#visitsedona</span>
-        <a href="tel:+74956660266">тел: +7(495) 666-02-66</a>
+        #visitsedona
+        <a class="tel" href="tel:+74956660266">тел: +7(495) 666-02-66</a>
       </p>
       <div class="socials">
         <ul class="socials-list">
           <li>
-            <a class="social-button twitter-icon" href="#" target="_blank">
-              <!-- CSS <img src="img/twitter.svg" width="46" height="48" alt="изображение логотипа Твиттер"> -->
-            </a>
+            <a class="social-button twitter-icon" href="#" target="_blank"></a>
           </li>
           <li>
-            <a class="social-button fb-icon" href="#" target="_blank">
-              <!-- CSS <img src="img/facebook.svg" width="140" height="72" alt="изображение логотипа Фейсбук"> -->
-            </a>
+            <a class="social-button fb-icon" href="#" target="_blank"></a>
           </li>
           <li>
-            <a class="social-button youtube-icon" href="#" target="_blank">
-              <!-- CSS <img src="img/youtube.svg" width="140" height="72" alt="изображение логотипа Ютюб"> -->
-            </a>
+            <a class="social-button youtube-icon" href="#" target="_blank"></a>
           </li>
         </ul>
       </div>
       <p class="copyright">
-        <span>website by</span>
+        website by
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/logo-html.svg" width="115" height="41" alt="логотип html академии">
         </a>

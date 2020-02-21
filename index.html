@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Туристический портал города "Седона"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page">
+  <body class="main-page">
     <header class="page-header">
       <nav class="nav">
         <div class="logo">
@@ -30,20 +33,26 @@
     </header>
     <main class="page-content">
       <section class="promo">
-        <img src="img/intro-welcome.svg" width="459" height="353" alt="Надпись с приветствием">
-        <h1 class="visually-hidden">Город "Седона"</h1>
-        <b>седона - небольшой городок в аризоне,
-          заслуживающий большего!</b>
-        <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+        <img class="welcome" src="img/intro-welcome.svg" width="459" height="353" alt="Надпись с приветствием">
+        <div class="promo-text">
+          <h1 class="visually-hidden">Город "Седона"</h1>
+          <b>седона - небольшой городок в аризоне,
+            заслуживающий большего!</b>
+          <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+        </div>
       </section>
       <section class="advantages">
         <ol class="advantages-list">
           <li class="advantages-item">
-            <h3>настоящий городок</h3>
-            <p>- №1 -</p>
-            <p>cедона — не аттракцион для туристов,
+            <div class="blue-bg">
+              <h3>настоящий городок</h3>
+              <p>- №1 -</p>
+              <p>cедона — не аттракцион для туристов,
               там течёт своя жизнь</p>
+            </div>
             <img src="img/buildings.jpg" width="800" height="256" alt="Фотография группы зданий">
+          </li>
+          <li>
             <ul class="advantages-description">
               <li class="description-item">
                 <!-- CSS <img src="img/building.svg" width="75" height="72" alt="Иконка в виде здания"> -->
@@ -64,11 +73,14 @@
                    производства!</p>
               </li>
             </ul>
+          </li>
           <li class="advantages-item reverse">
-            <h3>там есть мост дьявола</h3>
-            <p>- №2 -</p>
-            <p>да, по нему можно пройти! Если конечно вы
-            осмелитесь</p>
+            <div class="blue-bg">
+              <h3>там есть мост дьявола</h3>
+              <p>- №2 -</p>
+              <p>да, по нему можно пройти! Если конечно вы
+              осмелитесь</p>
+          </div>
             <img src="img/mountains.jpg" width="800" height="256" alt="Фотография горного утеса">
           </li>
           <li class="advantages-item grey-bg">
@@ -80,19 +92,19 @@
           <li class="advantages-item grey-bg">
             <h3>красивая дорога</h3>
             <p>- №4 -</p>
-            <p>ехать в седону из лас-вегаса совсем 
+            <p>ехать в седону из лас-вегаса совсем
               не скучно!</p>
           </li>
           <li class="advantages-item grey-bg">
             <h3>мало туристов</h3>
             <p>- №5 -</p>
-            <p>большинство едет в гранд каньон 
+            <p>большинство едет в гранд каньон
               и толпится там</p>
           </li>
         </ol>
       </section>
       <section class="searches-hotel">
-        <h2>Поиск гостиниц</h2>
+        <h2 class="visually-hidden">Поиск гостиниц</h2>
         <div class="searches-hotel-date">
           <b>заинтересовались?</b>
           <p>укажите предполагаемые даты поездки,
@@ -106,67 +118,61 @@
     </main>
     <footer class="page-footer">
       <p class="contacts">
-        <span>#visitsedona</span>
-        <a href="tel:+74956660266">тел: +7(495) 666-02-66</a>
+        #visitsedona
+        <a class="tel" href="tel:+74956660266">тел: +7(495) 666-02-66</a>
       </p>
       <div class="socials">
         <ul class="socials-list">
           <li>
-            <a class="social-button twitter-icon" href="#" target="_blank">
-              <!-- CSS <img src="img/twitter.svg" width="46" height="48" alt="изображение логотипа Твиттер"> -->
-            </a>
+            <a class="social-button twitter-icon" href="#" target="_blank"></a>
           </li>
           <li>
-            <a class="social-button fb-icon" href="#" target="_blank">
-              <!-- CSS <img src="img/fb-icon.svg" width="140" height="72" alt="изображение логотипа Фейсбук"> -->
-            </a>
+            <a class="social-button fb-icon" href="#" target="_blank"></a>
           </li>
           <li>
-            <a class="social-button youtube-icon" href="#" target="_blank">
-              <!-- CSS <img src="img/youtube.svg" width="140" height="72" alt="изображение логотипа Ютюб"> -->
-            </a>
+            <a class="social-button youtube-icon" href="#" target="_blank"></a>
           </li>
         </ul>
       </div>
       <p class="copyright">
-        <span>website by</span>
+        website by
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/logo-html.svg" width="115" height="41" alt="логотип html академии">
         </a>
       </p>
     </footer>
-  <div class="pop-up">
-    <form class="booking" method="get" action="https://echo.htmlacademy.ru">
-      <p>
-        <label for="date-arrival">дата заезда:</label>
-        <input type="date" name="date" id="date-arrival" value="2017-04-17">
-        <button class="calendar" type="button">
+    <div class="pop-up">
+      <form class="booking" method="get" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="date-arrival">дата заезда:</label>
+          <input type="date" name="date" id="date-arrival" value="2017-04-17">
+          <button class="calendar" type="button">
           <!-- CSS <img src="img/calendar.svg" width="21" height="23" alt="Иконка с изображением календаря"> -->
-        </button>
-      </p>
-      <p>
-        <label for="date-departure">дата выезда:</label>
-        <input type="date" name="date" id="date-departure" value="2017-07-04">
-        <button class="calendar" type="button">
+          </button>
+        </p>
+        <p>
+          <label for="date-departure">дата выезда:</label>
+          <input type="date" name="date" id="date-departure" value="2017-07-04">
+          <button class="calendar" type="button">
           <!-- CSS <img src="img/calendar.svg" width="21" height="23" alt="Иконка с изображением календаря"> -->
-        </button>
-      </p>
-      <p>
-        <label for="adults-field">взрослые:</label>
-        <button class="minus" type="button">-</button>
-        <input type="number" name="adults" id="adults-field" min="0" max="9" step="1" value="2">
-        <button class="plus" type="button">+</button>
-      </p>
-      <p>
-        <label for="children-field">дети:</label>
-        <button class="minus" type="button">-</button>
-        <input type="number" name="children" id="children-field" min="0" max="9" step="1" value="0">
-        <button class="plus" type="button">+</button>
-      </p>
-      <p>
-        <input class="button" type="submit" value="найти">
-      </p>
-    </form>
-  </div>
+          </button>
+        </p>
+        <p>
+          <label for="adults-field">взрослые:</label>
+          <button class="minus" type="button">-</button>
+          <input type="number" name="adults" id="adults-field" min="0" max="9" step="1" value="2">
+          <button class="plus" type="button">+</button>
+        </p>
+        <p>
+          <label for="children-field">дети:</label>
+          <button class="minus" type="button">-</button>
+          <input type="number" name="children" id="children-field" min="0" max="9" step="1" value="0">
+          <button class="plus" type="button">+</button>
+        </p>
+        <p>
+          <button class="find" type="submit">найти</button>
+        </p>
+      </form>
+    </div>
   </body>
 </html>
