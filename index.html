@@ -33,7 +33,9 @@
     </header>
     <main class="page-content">
       <section class="promo">
-        <img class="welcome" src="img/intro-welcome.svg" width="459" height="353" alt="Надпись с приветствием">
+        <div class="welcome-img">
+          <img src="img/intro-welcome.svg" width="459" height="353" alt="Надпись с приветствием">
+        </div>
         <div class="promo-text">
           <h1 class="visually-hidden">Город "Седона"</h1>
           <b>седона - небольшой городок в аризоне,
@@ -44,15 +46,15 @@
       <section class="advantages">
         <ol class="advantages-list">
           <li class="advantages-item">
-            <div class="blue-bg">
+            <div class="info blue-bg">
               <h3>настоящий городок</h3>
               <p>- №1 -</p>
               <p>cедона — не аттракцион для туристов,
               там течёт своя жизнь</p>
             </div>
-            <img src="img/buildings.jpg" width="800" height="256" alt="Фотография группы зданий">
-          </li>
-          <li>
+            <div class="img-wrap">
+              <img src="img/buildings.jpg" width="800" height="256" alt="Фотография группы зданий">
+            </div>
             <ul class="advantages-description">
               <li class="description-item">
                 <!-- CSS <img src="img/building.svg" width="75" height="72" alt="Иконка в виде здания"> -->
@@ -75,13 +77,15 @@
             </ul>
           </li>
           <li class="advantages-item reverse">
-            <div class="blue-bg">
+            <div class="info blue-bg">
               <h3>там есть мост дьявола</h3>
               <p>- №2 -</p>
               <p>да, по нему можно пройти! Если конечно вы
               осмелитесь</p>
-          </div>
-            <img src="img/mountains.jpg" width="800" height="256" alt="Фотография горного утеса">
+            </div>
+            <div class="img-wrap">
+              <img src="img/mountains.jpg" width="800" height="256" alt="Фотография горного утеса">
+            </div>
           </li>
           <li class="advantages-item grey-bg">
             <h3>небольшая площадь</h3>
@@ -118,7 +122,7 @@
     </main>
     <footer class="page-footer">
       <p class="contacts">
-        #visitsedona
+        <span>#visitsedona</span>
         <a class="tel" href="tel:+74956660266">тел: +7(495) 666-02-66</a>
       </p>
       <div class="socials">
@@ -135,14 +139,15 @@
         </ul>
       </div>
       <p class="copyright">
-        website by
+        <span>website by</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/logo-html.svg" width="115" height="41" alt="логотип html академии">
         </a>
       </p>
     </footer>
-    <div class="pop-up">
-      <form class="booking" method="get" action="https://echo.htmlacademy.ru">
+    <section class="pop-up">
+      <h2 class="visually-hidden">Форма поиска гостиниц</h2>
+      <form class="booking-form" method="get" action="https://echo.htmlacademy.ru">
         <p>
           <label for="date-arrival">дата заезда:</label>
           <input type="date" name="date" id="date-arrival" value="2017-04-17">
@@ -173,6 +178,6 @@
           <button class="find" type="submit">найти</button>
         </p>
       </form>
-    </div>
+    </section>
   </body>
 </html>

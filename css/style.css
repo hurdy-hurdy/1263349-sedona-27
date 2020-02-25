@@ -189,7 +189,7 @@ a {
   background-color: #ffffff;
 }
 
-.booking input[type="date"] {
+.booking-form input[type="date"] {
   font: inherit;
   background-color: #F2F2F2;
 }
@@ -247,7 +247,7 @@ fieldset {
 	border: 0;
 }
 
-form.options {
+.options-form {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -396,12 +396,13 @@ legend {
   background-color: #ffffff;
 }
 
-.results-sort h3 {
+.results-counter {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
+.results-sort-by,
 .sort-list {
   list-style: none;
   font-size: 12px;
@@ -409,11 +410,11 @@ legend {
   font-weight: 400;
 }
 
-.sort-list .blue {
+.sort-list .active {
   color: #81B3D2;
 }
 
-.sort-list .sub {
+.sort-list {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -431,7 +432,8 @@ legend {
   font-weight: 700;
 }
 
-.results p {
+.hotel-class,
+.hotel-cost {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
