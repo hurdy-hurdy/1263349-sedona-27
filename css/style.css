@@ -16,6 +16,16 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+p,
+ol,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
 .main-nav {
   font-size: 14px;
   line-height: 26px;
@@ -47,16 +57,14 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-page {
-  background-image: url("/Users/denisrybalko1/Desktop/study projects/1263349-sedona-27/img/intro-mask.svg"),
-    url("/Users/denisrybalko1/Desktop/study projects/1263349-sedona-27/img/mountains-background.jpg");
+.promo {
+  background-image: url("../img/intro-mask.svg"),
+  url("../img/mountains-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: 413px, 0px;
 }
 
-.promo {
+.welcome-img {
   text-align: center;
 }
 
@@ -94,6 +102,10 @@ a {
   text-align: center;
   color: #ffffff;
 
+  background-color: #81B3D2;
+}
+
+.img-wrap {
   background-color: #81B3D2;
 }
 
@@ -235,10 +247,9 @@ a {
   background-color: #5496BD;
 }
 
-.page-hotel {
+.options-form {
   background-color: #f2f2f2;
-  background-image: url("/Users/denisrybalko1/Desktop/study projects/1263349-sedona-27/img/filter-background.jpg");
-  background-size: 100%;
+  background-image: url("../img/filter-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -431,6 +442,19 @@ legend {
   line-height: 26px;
   font-weight: 700;
 }
+
+.results h3:hover {
+  color: #81B3D2;
+}
+
+.results h3:focus {
+  color: #776635;
+}
+
+.results h3:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 .hotel-class,
 .hotel-cost {
