@@ -14,7 +14,7 @@
           <div class="logo">
             <img src="img/logo-sedona.svg" width="138" height="71" alt="Логотип города Седона">
           </div>
-          <div class="main-nav start">
+          <div class="main-nav">
             <ul class="nav-list">
               <li class="nav-item left">
                 <a href="#">информация</a>
@@ -22,10 +22,6 @@
               <li class="nav-item left">
                 <a href="#">фото и видео</a>
               </li>
-            </ul>
-          </div>
-          <div class="main-nav end">
-            <ul class="nav-list">
               <li class="nav-item right">
                 <a href="#">карта штата</a>
               </li>
@@ -43,7 +39,7 @@
           </div>
           <div class="promo-text">
             <h1 class="visually-hidden">Город "Седона"</h1>
-            <p class="promo-description">седона - небольшой городок в аризоне,
+            <p class="promo-description">седона — небольшой городок в аризоне,
               заслуживающий большего!</p>
             <p class="promo-advantages">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
           </div>
@@ -54,7 +50,7 @@
               <div class="container-blue-bg">
                 <div class="info blue-bg">
                   <h3 class="info-head">настоящий городок</h3>
-                  <p class="info-number">- №1 -</p>
+                  <p class="info-number">— №1 —</p>
                   <p class="info-desc">cедона — не аттракцион для туристов,
                   там течёт своя жизнь</p>
                 </div>
@@ -63,22 +59,19 @@
                 </div>
               </div>
               <ul class="advantages-description">
-                <li class="description-item">
-                  <!-- CSS <img src="img/building.svg" width="75" height="72" alt="Иконка в виде здания"> -->
-                  <h3>жилье</h3>
-                  <p>рекомендуем пожить в настоящем мотеле,
+                <li class="description-item building">
+                  <h3>жильё</h3>
+                  <p class="advantages-text">рекомендуем пожить в настоящем мотеле,
                     всё как в кино!</p>
                 </li>
-                <li class="description-item">
-                  <!-- CSS <img src="img/burger.svg" width="75" height="72" alt="Иконка в виде бургера"> -->
+                <li class="description-item food">
                   <h3>еда</h3>
-                  <p>всегда заказывайте фирменный бургер, вы не
+                  <p class="advantages-text">всегда заказывайте фирменный бургер, вы не
                     разочаруетесь!</p>
                 </li>
-                <li class="description-item">
-                  <!-- CSS <img src="img/gift-box.svg" width="75" height="72" alt="Иконка в виде коробки с подарком"> -->
+                <li class="description-item gift">
                   <h3>сувениры</h3>
-                   <p>не только китайского, но и местного
+                   <p class="advantages-text">не только китайского, но и местного
                      производства!</p>
                 </li>
               </ul>
@@ -88,8 +81,8 @@
               <div class="info blue-bg">
                 <h3 class="reverse-head">там есть<br>
                    мост дьявола</h3>
-                <p class="reverse-number">- №2 -</p>
-                <p class="revers-desc">да, по нему можно пройти! Если конечно вы
+                <p class="reverse-number">— №2 —</p>
+                <p class="reverse-desc">да, по нему можно пройти! Если конечно вы
                 осмелитесь</p>
               </div>
               <div class="img-wrap">
@@ -97,36 +90,60 @@
               </div>
             </div>
             </li>
-          </ol>
-          <ol class="advantages-list-grey">
-            <li class="advantages-item-grey">
-              <h3>небольшая площадь</h3>
-              <p>- №3 -</p>
-              <p>все достопримечательности
+            <li class="advantages-item grey">
+              <h3 class="grey-head">небольшая площадь</h3>
+              <p class="grey-number">— №3 —</p>
+              <p class="grey-desc">все достопримечательности
                 находятся очень близко</p>
             </li>
-            <li class="advantages-item-grey">
-              <h3>красивая дорога</h3>
-              <p>- №4 -</p>
-              <p>ехать в седону из лас-вегаса совсем
+            <li class="advantages-item grey">
+              <h3 class="grey-head">красивая дорога</h3>
+              <p class="grey-number">— №4 —</p>
+              <p class="grey-desc-2">ехать в седону из лас-вегаса совсем
                 не скучно!</p>
             </li>
-            <li class="advantages-item-grey">
-              <h3>мало туристов</h3>
-              <p>- №5 -</p>
-              <p>большинство едет в гранд каньон
+            <li class="advantages-item grey">
+              <h3 class="grey-head">мало туристов</h3>
+              <p class="grey-number">— №5 —</p>
+              <p class="grey-desc-3">большинство едет в гранд каньон
                 и толпится там</p>
             </li>
           </ol>
         </section>
         <section class="searches-hotel">
           <h2 class="visually-hidden">Поиск гостиниц</h2>
-          <div class="searches-hotel-date">
+          <div class="searches-hotel date">
             <b>заинтересовались?</b>
             <p>укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
           <button class="button-find" type="button">поиск гостиницы в седоне</button>
+        </section>
+        <section class="pop-up">
+          <h2 class="visually-hidden">Форма поиска гостиниц</h2>
+          <form class="booking-form" method="get" action="https://echo.htmlacademy.ru">
+            <p>
+              <label for="date-arrival">дата заезда:</label>
+              <input type="date" name="date" id="date-arrival" value="2017-04-17">
+            </p>
+            <p>
+              <label for="date-departure">дата выезда:</label>
+              <input type="date" name="date" id="date-departure" value="2017-07-04">
+            </p>
+            <p>
+              <label for="adults-field">взрослые:</label>
+              <button class="minus" type="button">-</button>
+              <input type="number" name="adults" id="adults-field" min="0" max="9" step="1" value="2">
+              <button class="plus" type="button">+</button>
+              <label for="children-field">дети:</label>
+              <button class="minus" type="button">-</button>
+              <input type="number" name="children" id="children-field" min="0" max="9" step="1" value="0">
+              <button class="plus" type="button">+</button>
+            </p>
+            <p>
+              <button class="find" type="submit">найти</button>
+            </p>
+          </form>
         </section>
         <section class="map">
           <img src="img/map.png" width="1718" height="748" alt="Карта местности">
@@ -176,32 +193,6 @@
           </div>
         </section>
       </footer>
-      <section class="pop-up">
-        <h2 class="visually-hidden">Форма поиска гостиниц</h2>
-        <form class="booking-form" method="get" action="https://echo.htmlacademy.ru">
-          <p>
-            <label for="date-arrival">дата заезда:</label>
-            <input type="date" name="date" id="date-arrival" value="2017-04-17">
-          </p>
-          <p>
-            <label for="date-departure">дата выезда:</label>
-            <input type="date" name="date" id="date-departure" value="2017-07-04">
-          </p>
-          <p>
-            <label for="adults-field">взрослые:</label>
-            <button class="minus" type="button">-</button>
-            <input type="number" name="adults" id="adults-field" min="0" max="9" step="1" value="2">
-            <button class="plus" type="button">+</button>
-            <label for="children-field">дети:</label>
-            <button class="minus" type="button">-</button>
-            <input type="number" name="children" id="children-field" min="0" max="9" step="1" value="0">
-            <button class="plus" type="button">+</button>
-          </p>
-          <p>
-            <button class="find" type="submit">найти</button>
-          </p>
-        </form>
-      </section>
     </div>
   </body>
 </html>
