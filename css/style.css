@@ -80,8 +80,7 @@ a {
 .nav-list,
 .advantages-list,
 .advantages-description,
-.socials-list,
-.advantages-list-grey {
+.socials-list {
   list-style: none;
 }
 
@@ -99,11 +98,23 @@ a {
 }
 
 .nav-item.left {
+  width: 50%;
+
   text-align: left;
 }
 
+.nav-item.left:nth-child(2) {
+  padding-right: 173px;
+}
+
 .nav-item.right {
+  width: 50%;
+
   text-align: right;
+}
+
+.nav-item.right:nth-child(3) {
+  padding-right: 5px;
 }
 
 .nav-list a {
@@ -293,7 +304,7 @@ p.reverse-desc {
 
 .advantages-item.grey {
   width: 33.333%;
-  padding-top: 47px;
+  padding-top: 49px;
   padding-bottom: 58px;
 
   text-align: center;
@@ -304,6 +315,12 @@ p.reverse-desc {
 .grey-head {
   width: 38.333%;
   margin: 0 auto;
+}
+
+.advantages-item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .grey-number {
@@ -365,7 +382,7 @@ p.reverse-desc {
   color: #ffffff;
   text-transform: uppercase;
 
-  border: 0;
+  border: none;
 
   background-color: #766357;
 }
@@ -551,6 +568,8 @@ a.social-button {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+
+  border: none;
 
   background-color: #81B3D2;
 }
