@@ -514,6 +514,7 @@ a.social-button {
   color: #000000;
   text-transform: uppercase;
 
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
 }
 
@@ -579,6 +580,8 @@ a.social-button {
   width: 38px;
   height: 38px;
   padding: 10px 13px 10px 13px;
+  margin-right: -4px;
+  margin-left: -4px;
 
   text-align: center;
   color: #818181;
@@ -587,6 +590,18 @@ a.social-button {
   cursor: pointer;
 
   background-color: #F2F2F2;
+}
+
+button.minus {
+  margin-left: 38px;
+}
+
+.child-label {
+  padding-left: 53px;
+}
+
+.minus.child {
+  margin-left: 26px;
 }
 
 .booking-form input[type="text"] {
