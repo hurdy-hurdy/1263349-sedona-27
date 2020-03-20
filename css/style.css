@@ -505,7 +505,7 @@ a.social-button {
   transform: translateX(-50%);
 
   width: 568px;
-  padding: 55px;
+  padding: 55px 55px 27px 55px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -523,44 +523,103 @@ a.social-button {
   padding: 0;
 }
 
-.booking-form input[type="date"] {
+.booking-form input[type="text"] {
   width: 346px;
   height: 38px;
   margin-left: 20px;
+  padding-left: 13px;
+
+  font: inherit;
+  text-transform: uppercase;
 
   border: none;
-  font: inherit;
+
   background-color: #F2F2F2;
 }
 
 .booking-form input[id="date-departure"] {
   margin-left: 16px;
+  margin-top: 0px;
+}
+
+.calendar {
+  width: 21px;
+  height: 22px;
+
+  background-image: url(../img/calendar.svg);
+  fill: #cacaca;
+}
+
+.calendar.dep url {
+  fill: #cacaca;
+}
+
+.calendar.arr {
+  position: absolute;
+  top: 63px;
+  right: 64px;
+}
+
+.calendar.dep {
+  position: absolute;
+  top: 130px;
+  right: 64px;
+}
+
+.calendar:hover {
+  fill: #000000;
+}
+
+.calendar:active {
+  fill: #81b3d2;
 }
 
 .minus,
 .plus {
+  width: 38px;
+  height: 38px;
+  padding: 10px 13px 10px 13px;
+
+  text-align: center;
+  color: #818181;
+
+  border: 0;
+  cursor: pointer;
+
   background-color: #F2F2F2;
 }
 
-.booking input[type="number"] {
+.booking-form input[type="text"] {
   font: inherit;
 
   background-color: #F2F2F2;
 }
 
-.booking input[type="date"]:hover {
+.booking-form input[type="text"]:hover {
   background-color: #EBEBEB;
 }
 
-.booking input[type="date"]:focus {
+.booking-form input[type="text"]:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+}
+
+.booking-form input[id="adults-field"] {
+  width: 38px;
+  height: 38px;
+  margin: 0;
+}
+
+.booking-form input[id="children-field"] {
+  width: 38px;
+  height: 38px;
+  margin: 0;
 }
 
 .find {
   width: 458px;
   height: 58px;
-  margin-top: 32px;
+  margin-top: 25px;
 
   font-size: 21px;
   line-height: 26px;

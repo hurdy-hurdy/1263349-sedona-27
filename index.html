@@ -124,20 +124,22 @@
           <form class="booking-form" method="get" action="https://echo.htmlacademy.ru">
             <p>
               <label for="date-arrival">дата заезда:</label>
-              <input type="date" name="date" id="date-arrival" value="2017-04-17">
+              <input type="text" name="date" id="date-arrival" value="24 апреля 2017">
+              <span class="calendar arr"></span>
             </p>
             <p>
               <label for="date-departure">дата выезда:</label>
-              <input type="date" name="date" id="date-departure" value="2017-07-04">
+              <input type="text" name="date" id="date-departure" value="4 июля 2017">
+              <span class="calendar dep"></span>
             </p>
             <p>
               <label for="adults-field">взрослые:</label>
               <button class="minus" type="button">-</button>
-              <input type="number" name="adults" id="adults-field" min="0" max="9" step="1" value="2">
+              <input type="text" name="adults" id="adults-field" value="2">
               <button class="plus" type="button">+</button>
               <label for="children-field">дети:</label>
               <button class="minus" type="button">-</button>
-              <input type="number" name="children" id="children-field" min="0" max="9" step="1" value="0">
+              <input type="text" name="children" id="children-field" value="0">
               <button class="plus" type="button">+</button>
             </p>
             <p>
