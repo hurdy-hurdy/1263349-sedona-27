@@ -39,7 +39,7 @@
         <h1 class="visually-hidden">Форма поиска жилья</h1>
         <form class="options-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="infrastructure">
-            <legend class="infrastructure-header">инфрастуктура:</legend>
+            <legend class="infrastructure-header">инфраструктура:</legend>
             <p class="pool">
               <input type="checkbox" name="pool" id="pool-field" checked>
               <label for="pool-field">бассейн</label>
@@ -104,8 +104,16 @@
                 </li>
               </ul>
               <div class="triangle">
-                <p class="triangle-up">up</p>
-                <p class="triangle-down">down</p>
+                <button class="triangle-button up">
+                  <svg class="triangle-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"></path>
+                  </svg>
+                </button>
+                <button class="triangle-button down">
+                  <svg class="triangle-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 10L0 0h11"></path>
+                  </svg>
+                </button>
               </div>
             </div>
           </section>
@@ -115,8 +123,8 @@
               <div class="information">
                 <h3>Amara Resort & Spa</h3>
                 <div class="hotel-price">
-                  <p class="hotel-class">гостиница</p>
-                  <p class="hotel-cost">от 4000 р.</p>
+                  <div class="hotel-class">гостиница</div>
+                  <div class="hotel-cost">от 4000 р.</div>
                 </div>
                 <div class="button-active">
                   <a class="button-info" href="#">подробнее</a>
@@ -124,7 +132,7 @@
                 </div>
               </div>
               <div class="rating">
-                <p class="stars-4">****</p>
+                <p class="stars four"></p>
                 <p class="rating-points">рейтинг: <span>8,5</span></p>
               </div>
             </li>
@@ -133,8 +141,8 @@
               <div class="information">
                 <h3>Desert Quail Inn</h3>
                 <div class="hotel-price">
-                  <p class="hotel-class">мотель</p>
-                  <p class="hotel-cost">от 3000 р.</p>
+                  <div class="hotel-class">мотель</div>
+                  <div class="hotel-cost motel">от 3000 р.</div>
                 </div>
                 <div class="button-active">
                   <a class="button-info" href="#">подробнее</a>
@@ -142,7 +150,7 @@
                 </div>
               </div>
               <div class="rating">
-                <p class="stars-3">***</p>
+                <p class="stars three"></p>
                 <p class="rating-points">рейтинг: <span>8,9</span></p>
               </div>
             </li>
@@ -151,8 +159,8 @@
               <div class="information">
                 <h3>Villas at Poco Diablo</h3>
                 <div class="hotel-price">
-                  <p class="hotel-class">аппартаменты</p>
-                  <p class="hotel-cost">от 2000 р.</p>
+                  <div class="hotel-class">апартаменты</div>
+                  <div class="hotel-cost apartment">от 2000 р.</div>
                 </div>
                 <div class="button-active">
                   <a class="button-info" href="#">подробнее</a>
@@ -160,7 +168,7 @@
                 </div>
               </div>
               <div class="rating">
-                <p class="stars-2">**</p>
+                <p class="stars two"></p>
                 <p class="rating-points">рейтинг: <span>9,2</span></p>
               </div>
             </li>
@@ -211,6 +219,6 @@
           </div>
         </section>
       </footer>
-    </div>
+    </li>
   </body>
 </html>
