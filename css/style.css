@@ -402,7 +402,8 @@ p.reverse-desc {
 }
 
 .map {
-  height: 473px;
+  height: 598px;
+  margin-bottom: -125px;
 
   background-color: #ffffff;
 }
@@ -415,7 +416,7 @@ p.reverse-desc {
 .page-footer {
   position: relative;
 
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .contacts {
@@ -532,6 +533,12 @@ a.social-button {
 }
 
 .pop-up p {
+  display: flex;
+
+  position: relative;
+
+  align-items: center;
+
   margin-top: 0px;
   margin-bottom: 29px;
   padding: 0;
@@ -540,7 +547,7 @@ a.social-button {
 .booking-form input[type="text"] {
   width: 346px;
   height: 38px;
-  margin-left: 20px;
+  margin-left: 23px;
   padding-left: 13px;
 
   font: inherit;
@@ -552,7 +559,7 @@ a.social-button {
 }
 
 .booking-form input[id="date-departure"] {
-  margin-left: 16px;
+  margin-left: 19px;
   margin-top: 0px;
 }
 
@@ -561,6 +568,10 @@ a.social-button {
   height: 22px;
 
   fill: #cacaca;
+
+  border: 0;
+
+  background-color: transparent;
 
   cursor: pointer;
 }
@@ -571,14 +582,14 @@ a.social-button {
 
 .calendar.arr {
   position: absolute;
-  top: 63px;
-  right: 64px;
+  top: 8px;
+  right: 16px;
 }
 
 .calendar.dep {
   position: absolute;
-  top: 130px;
-  right: 64px;
+  top: 8px;
+  right: 16px;
 }
 
 .calendar:hover {
@@ -593,9 +604,7 @@ a.social-button {
 .plus {
   width: 38px;
   height: 38px;
-  padding: 10px 13px 10px 13px;
-  margin-right: -4px;
-  margin-left: -4px;
+  margin-right: -5px;
 
   text-align: center;
   color: #818181;
@@ -604,6 +613,16 @@ a.social-button {
   cursor: pointer;
 
   background-color: #F2F2F2;
+}
+
+.img-minus:hover,
+.img-plus:hover {
+  fill: #000000;
+}
+
+.img-minus:active,
+.img-plus:active {
+  fill: #81b3d2;
 }
 
 button.minus {
@@ -617,8 +636,9 @@ button.minus {
   fill: #cacaca;
 }
 
-.child-label {
-  padding-left: 53px;
+.children {
+  padding-right: 3px;
+  padding-left: 62px;
 }
 
 .minus.child {
@@ -628,11 +648,11 @@ button.minus {
 .booking-form input[type="text"] {
   font: inherit;
 
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .booking-form input[type="text"]:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .booking-form input[type="text"]:focus {
@@ -643,7 +663,7 @@ button.minus {
 .booking-form input[id="adults-field"] {
   width: 38px;
   height: 38px;
-  margin: 0;
+  margin-left: 4px;
 }
 
 .booking-form input[id="children-field"] {
@@ -655,7 +675,7 @@ button.minus {
 .find {
   width: 458px;
   height: 58px;
-  margin-top: 25px;
+  margin-top: 26px;
 
   font-size: 21px;
   line-height: 26px;
@@ -759,17 +779,19 @@ legend {
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+
+  cursor: pointer;
 }
 
 .input-check:checked + .check-box {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.input-check:active:checked + .check-box {
+.input-check:checked:disabled + .check-box {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-.input-check:not(checked):active + .check-box {
+.input-check:not(checked):disabled + .check-box {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
@@ -838,11 +860,13 @@ fieldset.accommodation {
 
 .price-controls .max-price {
   width: 80px;
+  height: 37px;
   margin-left: 65px;
 }
 
 .price-controls input {
   width: 50px;
+  height: 40px;
   margin: 0;
 
   color: inherit;
@@ -899,7 +923,7 @@ fieldset.accommodation {
 
 .btn-transparent {
   margin: 0 85px;
-  padding: 6px 31px;
+  padding: 6px 33px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1081,9 +1105,10 @@ fieldset.accommodation {
 .stars {
   display: inline-block;
 
-  width: 18px;
   height: 17px;
   margin-top: 0;
+
+  vertical-align: baseline;
 
   background-image: url("../img/star.svg");
   background-repeat: space;
