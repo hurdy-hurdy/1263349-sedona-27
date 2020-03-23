@@ -333,19 +333,19 @@ p.reverse-desc {
 .grey-desc {
   width: 52%;
   margin: 0 auto;
-  padding-top: 21px;
+  padding-top: 19px;
 }
 
 .grey-desc-2 {
   width: 66%;
   margin: 0 auto;
-  padding-top: 21px;
+  padding-top: 19px;
 }
 
 .grey-desc-3 {
   width: 64%;
   margin: 0 auto;
-  padding-top: 21px;
+  padding-top: 19px;
 }
 
 .searches-hotel {
@@ -377,7 +377,7 @@ p.reverse-desc {
   padding-top: 30px;
   padding-bottom: 30px;
 
-  font-size: 19px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
@@ -733,6 +733,7 @@ legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  color: #f2f2f2;
 }
 
 .input-check {
@@ -753,7 +754,8 @@ legend {
 
   width: 27px;
   height: 23px;
-  margin-left: -17px;
+  margin-left: -40px;
+  margin-top: -2px;;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -763,11 +765,11 @@ legend {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.input-check:checked:disabled + .check-box {
+.input-check:active:checked + .check-box {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-.input-check:not(checked):disabled + .check-box {
+.input-check:not(checked):active + .check-box {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
@@ -953,6 +955,7 @@ fieldset.accommodation {
   height: 10px;
   width: 11px;
   margin-right: 13px;
+  margin-top: -3px;
   padding: 0;
 
   border: 0 solid;
@@ -966,6 +969,7 @@ fieldset.accommodation {
   height: 10px;
   width: 11px;
   padding: 0;
+  margin-top: -5px;
 
   border: 0 solid;
 
