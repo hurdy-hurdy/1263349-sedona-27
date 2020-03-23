@@ -87,34 +87,28 @@ a {
 .nav-list {
   display: flex;
 
-  padding-right: 72px;
-  padding-left: 72px;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding: 15px 72px;
+  margin: 0;
 }
 
 .nav-item {
-  width: 25%;
+  width: 239px;
 }
 
 .nav-item.left {
-  width: 50%;
-
   text-align: left;
 }
 
-.nav-item.left:nth-child(2) {
-  padding-right: 173px;
-}
-
 .nav-item.right {
-  width: 50%;
-
   text-align: right;
 }
 
 .nav-item.right:nth-child(3) {
-  padding-right: 5px;
+  margin-left: 94px;
+}
+
+.nav-item.right:nth-child(4) {
+  margin-left: 6px;
 }
 
 .nav-list a {
@@ -393,6 +387,8 @@ p.reverse-desc {
   border: none;
 
   background-color: #766357;
+
+  cursor: pointer;
 }
 
 .button-find:hover {
@@ -443,6 +439,7 @@ p.reverse-desc {
 .link p {
   margin: 0px;
   padding-left: 38px;
+  padding-top: 6px;
 }
 
 .tel {
@@ -464,7 +461,15 @@ p.reverse-desc {
 }
 
 .socials-list svg {
-  fill: #F2F2F2;
+  fill: #f2f2f2;
+}
+
+.social-button:hover {
+  background: #669ec0;
+}
+
+.social-button:active .social-img {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 a.social-button {
@@ -555,8 +560,9 @@ a.social-button {
   width: 21px;
   height: 22px;
 
-  background-image: url(../img/calendar.svg);
   fill: #cacaca;
+
+  cursor: pointer;
 }
 
 .calendar.dep url {
@@ -602,6 +608,13 @@ a.social-button {
 
 button.minus {
   margin-left: 38px;
+}
+
+.img-minus,
+.img-plus {
+  vertical-align: middle;
+
+  fill: #cacaca;
 }
 
 .child-label {
@@ -654,6 +667,8 @@ button.minus {
   border: none;
 
   background-color: #81B3D2;
+
+  cursor: pointer;
 }
 
 .find:hover {
@@ -720,8 +735,44 @@ legend {
   font-weight: 700;
 }
 
-input[type="checkbox"] {
-  display: none;
+.input-check {
+  position: absolute;
+  left: 108px;
+
+  width: 27px;
+  height: 23px;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  cursor: pointer;
+}
+
+.check-box {
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+  margin-left: -17px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.input-check:checked + .check-box {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.input-check:checked:disabled + .check-box {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.input-check:not(checked):disabled + .check-box {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.input-label {
+  padding-left: 23px;
 }
 
 fieldset.accommodation {
@@ -778,10 +829,14 @@ fieldset.accommodation {
   cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price{
+  width: 81px;
+  margin-left: 64px;
+}
+
 .price-controls .max-price {
   width: 80px;
-  padding-left: 65px;
+  margin-left: 65px;
 }
 
 .price-controls input {
@@ -960,6 +1015,14 @@ fieldset.accommodation {
   color: #81B3D2;
 }
 
+.sort-item a:hover {
+  color: #81b3d2;
+}
+
+.sort-item a:active {
+  color: #000000;
+}
+
 .sort-item:nth-child(2) {
   padding-left: 33px;
 }
@@ -1108,6 +1171,8 @@ fieldset.accommodation {
   border: 0;
 
   background-color: #766357;
+
+  cursor: pointer;
 }
 
 .button-rent:hover {
