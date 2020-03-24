@@ -134,6 +134,8 @@ a {
   url("../img/mountains-background.jpg");
   background-position-y: 450px, -57px;
   background-repeat: no-repeat;
+
+  background-color: #81b3d2;
 }
 
 .welcome-img {
@@ -211,7 +213,6 @@ a {
 
 .advantages-description  {
   display: flex;
-  justify-content: space-around;
 
   padding-bottom: 8px;
   width: 100%;
@@ -731,7 +732,7 @@ button.minus {
   background-image: url("../img/filter-background.jpg");
   background-position-y: -56px;
   background-repeat: no-repeat;
-  background-color: #f2f2f2;
+  background-color: #766357;
 }
 
 .options-form p {
@@ -740,13 +741,14 @@ button.minus {
   margin-bottom: 4px;
 }
 
-fieldset {
+fieldset.infrastructure {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-legend {
+legend.infrastructure-header,
+legend.accommodation-header {
   padding: 0;
   width: 170px;
 
@@ -783,6 +785,14 @@ legend {
   cursor: pointer;
 }
 
+.input-check:focus + .check-box {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 5px;
+  border: 3px solid #6495ed;
+}
+
 .input-check:checked + .check-box {
   background-image: url("../img/checkbox-on.svg");
 }
@@ -800,7 +810,15 @@ legend {
 }
 
 fieldset.accommodation {
-  margin-left: 86px;
+  margin: 0 0 0 86px;
+  padding: 0;
+  border: 0;
+}
+
+fieldset.prices {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .filter-range {
@@ -976,29 +994,29 @@ fieldset.accommodation {
 }
 
 .triangle-button.up {
-  height: 10px;
-  width: 11px;
-  margin-right: 13px;
-  margin-top: -3px;
+  width: 12px;
+  margin-right: 12px;
+  margin-top: 1px;
   padding: 0;
 
   border: 0 solid;
 
   cursor: pointer;
 
+  background-color: #ffffff;
   fill: #cacaca;
 }
 
 .triangle-button.down {
-  height: 10px;
-  width: 11px;
-  padding: 0;
-  margin-top: -5px;
+  width: 12px;
+  padding: 0 1px 0 0;
+  margin-top: 0;
 
   border: 0 solid;
 
   cursor: pointer;
 
+  background-color: #ffffff;
   fill: #81b3d2;
 }
 
@@ -1096,7 +1114,6 @@ fieldset.accommodation {
 .hotel-cost.apartment {
   margin-left: 21px;
 }
-
 
 .rating {
   margin-left: auto;
@@ -1213,5 +1230,4 @@ fieldset.accommodation {
 
   background-color: #503E33;
 }
-
 
